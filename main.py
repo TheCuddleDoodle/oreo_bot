@@ -1,5 +1,5 @@
 from telethon.sync import TelegramClient, events
-api_id , api_hash = [1833830630,'AAG4tGCXt0xMFxHk8qDwnq0lPoFE3EeCz5g']
+api_id , api_hash = [,'']
 
 with TelegramClient('tassist', api_id, api_hash) as client:
    client.send_message('me', 'Hello, myself!')
