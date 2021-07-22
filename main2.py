@@ -5,9 +5,9 @@ import os,asyncio,json
 
 
 users = {}
-api_id = 7981256
-api_hash ='4afb49d88945d5cd3e4891ff3dcee58f'
-name = 'Ruuut'
+api_id = 
+api_hash =''
+name = ''
 
 client = TelegramClient(name, api_id, api_hash)
 
