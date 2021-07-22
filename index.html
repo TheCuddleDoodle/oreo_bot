@@ -1,0 +1,36 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script type="text/javascript">
+     $(document).ready(function(){
+        var link;
+        $("#submit").click(function(){
+          link=$("#link").val();
+          $.post("http://localhost:5000/request",{link: link}, function(data){
+            if(data === 'yes') {
+                alert("reponse set to"+data);
+              }
+          });
+        });
+      });
+  </script>>
+
+  <div class="bg-image"></div>
+
+<div class="bg-text">
+<h1>
+    Enter the your user ID
+  </h1>
+  <form class = "grid" method="post" action="/request">
+
+    <input type="text" name="link">
+    <input type="submit" value="Submit">
+
+</form>
+</div>
+  
+</body>>
+
+</html>
